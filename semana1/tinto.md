@@ -1,9 +1,4 @@
 # algoritmo para prepara un tinto (cafe)
-
-este docuemto contiene las intrucciones paso a paso para prepara un tinto correctamente
-
-## pasos del algoritmo
-
 1. inicio
 2. medir 3 gramos de cafe
 3. Echar los 3g de cafe en en el pocillo
@@ -12,5 +7,8 @@ este docuemto contiene las intrucciones paso a paso para prepara un tinto correc
     si, sí esta caliente continuar con el siguiente paso
 5. verter agua caliente en el pocillo
 6. coger una cuchara
-7. revolver con la mezcla
+7. revolver
 8. sirvelo
+
+
+
