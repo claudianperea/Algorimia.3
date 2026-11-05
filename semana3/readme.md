@@ -39,3 +39,12 @@ ____
 | 2 | 2 | 3	|
 | 3 | 1 | 5	|
 | 4 | 0 | 7	|
+
+*Posible tabla traza de Factura de un restaurante*
+| Paso / Momento|	nombrePlato |	precio | 	cantidad |	subtotal (Acumulado) |	opcion |	Salida / Pantalla |
+| Inicio |	- |	- |	- | 	0 | 	1 | "--- SISTEMA DE FACTURACIÓN ---" |
+| Iteración 1 (Entrada)|	"Hamburguesa" |	15000 | 	2 | 	30000 (0 + 150002)*	|1 |	Pide plato, precio, cantidad y si desea otro (1)|
+| Iteración 2 (Entrada) |	"Gaseosa" | 	5000 |	1 | 	35000 (30000 + 50001)* |	0 |	Pide plato, precio, cantidad y si desea otro (0)| 
+Fin del Bucle	"Gaseosa"	5000	1	35000	0 (Sale del bucle)	-
+Cálculos finales	-	-	-	35000	0	iva = 2800, total = 37800
+Impresión de Factura	-	-	-	35000	0	Muestra Subtotal, IVA y TOTAL: $37800
