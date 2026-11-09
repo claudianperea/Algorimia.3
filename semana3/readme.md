@@ -41,10 +41,14 @@ ____
 | 4 | 0 | 7	|
 
 *Posible tabla traza de Factura de un restaurante*
-| Paso / Momento|	nombrePlato |	precio | 	cantidad |	subtotal (Acumulado) |	opcion |	Salida / Pantalla |
-| Inicio |	- |	- |	- | 	0 | 	1 | "--- SISTEMA DE FACTURACIÓN ---" |
-| Iteración 1 (Entrada)|	"Hamburguesa" |	15000 | 	2 | 	30000 (0 + 150002)*	|1 |	Pide plato, precio, cantidad y si desea otro (1)|
-| Iteración 2 (Entrada) |	"Gaseosa" | 	5000 |	1 | 	35000 (30000 + 50001)* |	0 |	Pide plato, precio, cantidad y si desea otro (0)| 
-Fin del Bucle	"Gaseosa"	5000	1	35000	0 (Sale del bucle)	-
-Cálculos finales	-	-	-	35000	0	iva = 2800, total = 37800
-Impresión de Factura	-	-	-	35000	0	Muestra Subtotal, IVA y TOTAL: $37800
+## Tabla de traza – Factura Restaurante
+
+| Paso | nombrePlato | precio unidad | cantidad | subtotal (Acumulado) | opcion | Salida |
+|---|---|---:|---:|---:|---:|---|
+| Inicio | - | - | - | 0 | 1 | Inicializa subtotal = 0 y respuesta = 1 |
+| 1 | "Hamburguesa" | 15000 | 2 | 30000 (0 + 15000 * 2) | 1 | Solicita nombre, precio, cantidad y pregunta si desea agregar otro producto |
+| 2 | "Gaseosa" | 5000 | 1 | 35000 (30000 + 5000 * 1) | 0 | Solicita nombre, precio, cantidad y pregunta si desea agregar otro producto |
+| Fin del bucle | "Gaseosa" | 5000 | 1 | 35000 | 0 | La condición respuesta <> 0 es falsa. Sale del bucle |
+| Cálculos finales | - | - | - | 35000 | 0 | iva = 35000 * 0.08 = 2800; total = 35000 + 2800 = 37800 |
+| Impresión de factura | - | - | - | 35000 | 0 | Muestra subtotal: $35000, IVA: $2800 y TOTAL: $37800 |
+| Fin | - | - | - | 35000 | 0 | "¡Gracias por su visita!" |
